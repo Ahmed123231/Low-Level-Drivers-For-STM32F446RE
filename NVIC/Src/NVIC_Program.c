@@ -10,10 +10,10 @@
  * @date 2024-10-26
  */
 
-#include "../Inc/NVIC_Interface.h"
-#include "../Inc/NVIC_Private.h"
-#include "../../../LIB/STM32F446xx.h"
-#include "../../../LIB/ErrType.h"
+#include "NVIC_Interface.h"
+#include "NVIC_Private.h"
+#include "STM32F446xx.h"
+#include "ErrType.h"
 
 
 /**
