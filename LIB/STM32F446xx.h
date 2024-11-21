@@ -36,6 +36,7 @@
 #define USART1_BASE_ADDRESS			 0x40011000UL
 #define USART6_BASE_ADDRESS			 0x40011400UL
 #define EXTI_BASE_ADDRESS			 0x40013C00UL
+#define SYSCFG_BASE_ADDRESS			 0x40013800UL
 
 /******************* GPIO Register Definition Structure *******************/
 
@@ -154,6 +155,23 @@ typedef struct
 
 #define EXTI			((EXTI_RegDef_t*)EXTI_BASE_ADDRESS)   /*!< Pointer to EXTI_RegDef Struct*/
 
+/******************* SYSCFG Register Definition Structure *******************/
+
+typedef struct
+{
+    volatile uint32_t MEMRMP;   	/*!< Memory Remap Register: Configures memory mapping for the system address space */
+    volatile uint32_t PMC;      	/*!< Peripheral Mode Configuration Register: Configures features such as VDD monitoring */
+    volatile uint32_t EXTICR[4]; 	/*!< External Interrupt Configuration Registers (EXTICR1-EXTICR4): 
+                                      Configures the source input for external interrupt lines */
+    volatile uint32_t RESERVED0[2]; /*!< Reserved Space: Reserved for future use; do not modify */
+    volatile uint32_t CMPCR;    	/*!< Compensation Cell Control Register: Controls the compensation cell for I/O speed optimization */
+    volatile uint32_t RESERVED1[2]; /*!< Reserved Space: Reserved for future use; do not modify */
+    volatile uint32_t CFGR;     	/*!< Configuration Register: Configures various SYSCFG settings */
+} SYSCFG_RegDef_t;
+
+/******************* EXTI Preipheral Definition *******************/
+
+#define SYSCFG		((SYSCFG_RegDef_t*)SYSCFG_BASE_ADDRESS)   /*!< Pointer to SYSCFG_RegDef Struct*/
 
 /******************* USART Register Definition Structure *******************/
 typedef struct 
