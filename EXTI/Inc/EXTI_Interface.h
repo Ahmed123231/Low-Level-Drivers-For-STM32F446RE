@@ -23,22 +23,22 @@
  */
 typedef enum
 {
-    PIN0,  /**< External Interrupt Line 0 */
-    PIN1,  /**< External Interrupt Line 1 */
-    PIN2,  /**< External Interrupt Line 2 */
-    PIN3,  /**< External Interrupt Line 3 */
-    PIN4,  /**< External Interrupt Line 4 */
-    PIN5,  /**< External Interrupt Line 5 */
-    PIN6,  /**< External Interrupt Line 6 */
-    PIN7,  /**< External Interrupt Line 7 */
-    PIN8,  /**< External Interrupt Line 8 */
-    PIN9,  /**< External Interrupt Line 9 */
-    PIN10, /**< External Interrupt Line 10 */
-    PIN11, /**< External Interrupt Line 11 */
-    PIN12, /**< External Interrupt Line 12 */
-    PIN13, /**< External Interrupt Line 13 */
-    PIN14, /**< External Interrupt Line 14 */
-    PIN15  /**< External Interrupt Line 15 */
+	EXTI_PIN0,  /**< External Interrupt Line 0 */
+	EXTI_PIN1,  /**< External Interrupt Line 1 */
+	EXTI_PIN2,  /**< External Interrupt Line 2 */
+	EXTI_PIN3,  /**< External Interrupt Line 3 */
+	EXTI_PIN4,  /**< External Interrupt Line 4 */
+	EXTI_PIN5,  /**< External Interrupt Line 5 */
+	EXTI_PIN6,  /**< External Interrupt Line 6 */
+	EXTI_PIN7,  /**< External Interrupt Line 7 */
+	EXTI_PIN8,  /**< External Interrupt Line 8 */
+	EXTI_PIN9,  /**< External Interrupt Line 9 */
+	EXTI_PIN10, /**< External Interrupt Line 10 */
+	EXTI_PIN11, /**< External Interrupt Line 11 */
+	EXTI_PIN12, /**< External Interrupt Line 12 */
+	EXTI_PIN13, /**< External Interrupt Line 13 */
+	EXTI_PIN14, /**< External Interrupt Line 14 */
+	EXTI_PIN15  /**< External Interrupt Line 15 */
 } EXTI_IRQNum;
 
 /**
