@@ -66,7 +66,7 @@ typedef enum {
     USART1,               /**< USART1 global Interrupt */
     USART2,               /**< USART2 global Interrupt */
     USART3,               /**< USART3 global Interrupt */
-    EXTI5_10,             /**< EXTI Line[10:5] Interrupts */
+    EXTI15_10,             /**< EXTI Line[10:5] Interrupts */
     RTC_Alarm,            /**< RTC Alarm (A and B) through EXTI Line Interrupt */
     OTG_FS_WKUP,          /**< USB OTG FS Wakeup through EXTI line interrupt */
     TIM8_BRK_TIM12,       /**< TIM8 Break and TIM12 global Interrupts */
