@@ -2,8 +2,7 @@
 
 ## Overview
 
-This Repo Contains low Level Driver for STM32F446RE Peripherals
-
+This repository contains low-level drivers for STM32F446RE peripherals and is continually updated with new drivers as they are developed.
 ## Features
 
 The Repository Contains the following drivers:
@@ -11,5 +10,5 @@ The Repository Contains the following drivers:
 - GPIO
 - NVIC
 - USART
-
+- EXTI
 
